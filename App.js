@@ -5,7 +5,7 @@ import { ListItem } from './components/ListItem'
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListItem />
+      <ListItem imageUrl={"https://picsum.photos/200"} title={"hoge hoge hoge"} author={"React News"}/>
       <ListItem />
       <ListItem />
       <StatusBar style="auto" />

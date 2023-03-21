@@ -1,20 +1,20 @@
 import { StyleSheet, Image, View, Text } from 'react-native';
 
-export const ListItem = () => {
+export const ListItem = (props) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
-        <Image 
+        <Image
           style={{width: 100, height: 100}}
-          source={{uri: "https://picsum.photos/200"}}
+          source={{uri: props.imageUrl}}
         />
       </View>
       <View style={styles.rightContainer}>
         <Text numberOfLines={3} style={styles.text}>
-          hoge hoge hoge hoge hoge hoge
+          {props.title}
         </Text>
         <Text style={styles.subText}>
-          ReactNews
+          {props.author}
         </Text>
       </View>
     </View>
